@@ -1,0 +1,26 @@
+
+#creating a function that returns a shopping list
+remind_me <- function(){
+  shop_list <- c("veggies", "berries", "bread", "cheese", "hummus", "crackers")
+  return(shop_list)
+}
+
+#testing it
+remind_me()
+#Output:
+#[1] "veggies"  "berries"  "bread"    "cheese"   "hummus"   "crackers"
+
+#creating a function that returns answers to specific questions
+cheat <- function(q_num){
+ answers <- list(
+   Q3.1.1 = "classgrades <- rnorm(35, mean = 7, sd = 1)",
+   Q3.1.2 = "plot(data$DATE, data$TMIN)",
+   Q3.1.16 = "matrix(c(1, 2, 3, 8, 10, 12, 21, 24, 27), nrow = 3, byrow = TRUE)"
+ )
+return(answers[[q_num]])  
+}
+
+#testing it
+cheat("Q3.1.1")
+#Output:
+#[1] "classgrades <- rnorm(35, mean = 7, sd = 1)"
